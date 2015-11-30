@@ -43,7 +43,7 @@
   },
  
   "Resources" : {
-    "newTable123" : {
+    "myDynamoDBTable" : {
       "Type" : "AWS::DynamoDB::Table",
       "Properties" : {
         "AttributeDefinitions": [ { 
