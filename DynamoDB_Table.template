@@ -54,7 +54,7 @@
           { "AttributeName": {"Ref" : "HaskKeyElementName"}, "KeyType": "HASH" }
         ],
         "ProvisionedThroughput" : {
-          "ReadCapacityUnits" : {"Ref" : "ReadCapacityUnits"},
+          "ReadCapacityUnits" : 7,
           "WriteCapacityUnits" : {"Ref" : "WriteCapacityUnits"}
         }                
       }
