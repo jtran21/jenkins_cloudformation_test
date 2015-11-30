@@ -26,7 +26,7 @@
     "ReadCapacityUnits" : {
       "Description" : "Provisioned read throughput",
       "Type" : "Number",
-      "Default" : "3",
+      "Default" : "4",
       "MinValue": "1",
       "MaxValue": "10000",
       "ConstraintDescription" : "must be between 5 and 10000"
