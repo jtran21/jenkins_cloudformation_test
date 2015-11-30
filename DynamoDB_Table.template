@@ -26,8 +26,8 @@
     "ReadCapacityUnits" : {
       "Description" : "Provisioned read throughput",
       "Type" : "Number",
-      "Default" : "1",
-      "MinValue": "5",
+      "Default" : "3",
+      "MinValue": "1",
       "MaxValue": "10000",
       "ConstraintDescription" : "must be between 5 and 10000"
     },
@@ -35,8 +35,8 @@
     "WriteCapacityUnits" : {
       "Description" : "Provisioned write throughput",
       "Type" : "Number",
-      "Default" : "1",
-      "MinValue": "5",
+      "Default" : "6",
+      "MinValue": "1",
       "MaxValue": "10000",
       "ConstraintDescription" : "must be between 5 and 10000"
     }
@@ -54,7 +54,7 @@
           { "AttributeName": {"Ref" : "HaskKeyElementName"}, "KeyType": "HASH" }
         ],
         "ProvisionedThroughput" : {
-          "ReadCapacityUnits" : 7,
+          "ReadCapacityUnits" : {"Ref" : "ReadCapacityUnits" },
           "WriteCapacityUnits" : {"Ref" : "WriteCapacityUnits"}
         }                
       }
